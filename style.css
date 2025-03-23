@@ -757,7 +757,7 @@ footer p {
 }
 
 .nav-btn {
-  background-color: #5e17eb;
+  background-color: #d6d0e1;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -765,7 +765,7 @@ footer p {
 }
 
 .nav-btn:hover {
-  background-color: #4a11c7;
+  background-color: #b0aeb5;
   transform: translateY(-2px);
 }
 
