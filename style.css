@@ -194,8 +194,8 @@ nav {
 /* SECTIONS */
 
 section {
-  padding: 6rem 0;
-  min-height: 100vh;
+  padding: 2rem 0;
+  min-height: 50vh;
   box-sizing: border-box;
 }
 
@@ -428,7 +428,7 @@ section {
 
 .details-container h3 {
   margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--dark-color);
 }
 
@@ -522,12 +522,12 @@ article .icon {
 }
 
 article h3 {
-  font-size: 1.1rem;
+  font-size: 0.1rem;
   margin-bottom: 0.3rem;
 }
 
 article p {
-  font-size: 0.9rem;
+  font-size: 0.1rem;
   color: var(--gray-color);
 }
 
@@ -592,19 +592,21 @@ article p {
 
 #contact {
   background: linear-gradient(135deg, rgba(94, 23, 235, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  max-height: 3rem;
 }
 
 .contact-content {
   max-width: 200px;
   margin: 0 auto;
   text-align: center;
+  max-height: 0;
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .contact-info-container {
