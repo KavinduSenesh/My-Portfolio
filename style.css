@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9edf3 100%);
+  color: #2c3e50;
 }
 
 html {
@@ -16,9 +18,8 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #34495e;
 }
-
 /* TRANSITION */
 
 a,
@@ -37,6 +38,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .nav-links {
@@ -48,18 +52,20 @@ nav {
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: transparent;
 }
 
 a:hover {
-  color: grey;
+  color: #3498db;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgba(52, 152, 219, 0.5);
 }
 
 .logo {
   font-size: 2rem;
+  color: #2980b9;
+  font-weight: 600;
 }
 
 .logo:hover {
@@ -89,7 +95,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: #2c3e50;
   transition: all 0.3 ease-in-out;
 }
 
@@ -97,11 +103,14 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu-links a {
@@ -109,7 +118,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #2c3e50;;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -227,11 +236,15 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: 0.1rem solid #3498db;
 }
 
 .btn-color-1:hover,
@@ -241,20 +254,21 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   color: white;
 }
 
-.btn-color-1:hover {
+/* .btn-color-1:hover {
   background: rgb(0, 0, 0);
-}
+} */
 
 .btn-color-2 {
-  background: none;
+  background: transparent;
+  color: #3498db;
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: #3498db 0.1rem solid;
 }
 
 .btn-container {
@@ -262,6 +276,15 @@ section {
 }
 
 /* ABOUT SECTION */
+
+/* section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9edf3 100%);
+} */
 
 #about {
   position: relative;
@@ -285,6 +308,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .arrow {
@@ -296,10 +320,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: 0.1rem solid rgba(52, 152, 219, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
@@ -321,7 +345,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: #2980b9;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -362,13 +386,13 @@ article div {
 }
 
 article h3 {
+  color: #2c3e50;
   font-size: 1rem;
-  color: rgb(85, 85, 85);
 }
 
 article p {
+  color: #34495e;
   font-size: 0.8rem;
-  color: rgb(120, 120, 120);
 }
 
 
@@ -379,44 +403,46 @@ article p {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: rgba(52, 152, 219, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: #2980b9;
 }
 
+
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: #2c3e50;
+  border-color: rgba(52, 152, 219, 0.5);
 }
+
+
 
 /* CONTACT */
 
 #contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9edf3 100%);
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  border: 0.1rem solid rgba(52, 152, 219, 0.2);
+  background: rgba(255, 255, 255, 0.8);
   margin: 2rem auto;
   padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info-container {
@@ -428,7 +454,7 @@ article p {
 }
 
 .contact-info-container p {
-  font-size: larger;
+  color: #2c3e50;
 }
 
 .contact-icon {
@@ -442,22 +468,26 @@ article p {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9edf3 100%);
+  padding: 2rem 0;
 }
 
 footer p {
   text-align: center;
+  color: #34495e;
 }
 
 /* Previous CSS remains the same */
 
 /* PROJECT DESCRIPTION STYLES */
+/* .project-description {
+  
+} */
 .project-description {
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
-  color: rgb(85, 85, 85);
+  color: #34495e;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
